@@ -8,7 +8,7 @@ def N_s(alpha: float) -> float:
 
 def N_p(alpha: float) -> float:
     # p-type primitive GTO normalization (Cartesian)
-    return (2.0 * alpha) ** 1.25 * PI ** (-0.75)
+    return 2.0 ** 0.5 * (2.0 * alpha) ** 1.25 * PI ** (-0.75)
 
 def N_sto_s(n: int, zeta: float) -> float:
     # STO s (real Y_00): includes 1/sqrt(4π)
