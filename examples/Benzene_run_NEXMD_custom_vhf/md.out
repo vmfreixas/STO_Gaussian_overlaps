@@ -1,14 +1,14 @@
 
  |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
- | MD execution started at    Fri Nov  7 14:08:20 PST 2025   |
- | Computer:  Darwin vcv078149.vpn.uci.edu arm64  |
+ | MD execution started at    Sat Nov  8 09:06:22 PST 2025   |
+ | Computer:  Darwin Victors-MacBook-Pro.local ar |
  |________________________________________________|
 
  rnd_seed=      272184
  !!!!!!-----MD INPUT-----!!!!!!
 
- Excited state MD,      state=           1
- Number of states to propagate           1
+ Excited state MD,      state=          -1
+ Number of states to propagate           4
  Initial count for out files              0
  MD at constant energy
  Printing transition dipole moments:            1
@@ -35,7 +35,7 @@
  Allocating initial naesmd_module variables
  Allocating md_module initial variables
  Allocating variables
- Allocating naesmd_module variables          12           1
+ Allocating naesmd_module variables          12           4
  Allocating md_module variables          12
   Finish reading coordinates 
  Rescaling velocity
@@ -53,7 +53,7 @@
     1        -0.445138   -0.738376    0.000000
     1        -2.942192   -0.816618    0.000000
     1        -4.256141    1.303226    0.000000
- LPRINT:           3           1
+ LPRINT:           3          -1
 
 --------------------------------------------------------------------------------
   QM CALCULATION INFO
@@ -109,68 +109,111 @@ QMMM: SCF Converged to 0.2306E-04 in:    10 Cycles
  mdflag=           2
  irflag=           0
  M4=         225
- Mx=           3
+ Mx=           6
  Mj=           0
- nd=          15
- nd1=           3
- j1=           3
+ nd=          30
+ nd1=           5
+ j1=           6
  qm2ds%istore=           0
  qm2ds%istore_M=           0
  eigenvalues and residual norm
- Perturbed left m=           3
+ Perturbed left m=           6
  eigenvalues and residual norm
- Perturbed left m=           3
+ Perturbed left m=           6
  eigenvalues and residual norm
- Perturbed left m=           3
+ Perturbed left m=           6
  eigenvalues and residual norm
- Perturbed left m=           1
+ Perturbed left m=           4
  eigenvalues and residual norm
- Davidson not converged, expansion=          15
- Currently have            3  states
- With            3  initial guesses
+ Davidson not converged, expansion=          30
+ Currently have            6  states
+ With            6  initial guesses
+ eigenvalues and residual norm
+ Perturbed left m=           4
+ eigenvalues and residual norm
+ Perturbed left m=           4
+ eigenvalues and residual norm
+ Perturbed left m=           4
  eigenvalues and residual norm
  Perturbed left m=           2
  eigenvalues and residual norm
  Perturbed left m=           2
  eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Davidson not converged, expansion=          30
+ Currently have            6  states
+ With            6  initial guesses
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           1
+ eigenvalues and residual norm
  Perturbed left m=           1
  eigenvalues and residual norm
  Perturbed left m=           1
  eigenvalues and residual norm
- @@@@ Davidson subroutine Found vectors           3
+ Perturbed left m=           1
+ eigenvalues and residual norm
+ @@@@ Davidson subroutine Found vectors           6
   i, e0(i), ferr(i), ftol0
-  1 +++    3.989709689466700     0.30E-07 0.10E-05
-  2 +++    4.215836710420435     0.25E-06 0.10E-05
-  3 +++    5.906281692448466     0.46E-06 0.10E-05
+  1 +++    3.989709689384803     0.29E-07 0.10E-05
+  2 +++    4.215836739634208     0.80E-06 0.10E-05
+  3 +++    5.906281511223730     0.49E-06 0.10E-05
+  4 +++    5.908278984335286     0.43E-06 0.10E-05
+  5 +++    5.997083913294869     0.75E-07 0.10E-05
+  6 +++    6.065378127888493     0.76E-06 0.10E-05
  -------------------------------------------------
 
  Frequencies (eV) and Oscillator strengths (unitless)
         Omega            fx              fy              fz          ftotal
-   1     3.98970968946670        0.448995462973065E-08    0.394725719261756E-06    0.496950307604030E-31    0.399215673891486E-06
-   2     4.21583671042043        0.140279910431440E-05    0.139494574989596E-08    0.211209362120248E-30    0.140419405006430E-05
-   3     5.90628169244847        0.142720293418999E-02    0.561280647801628        0.570478403119833E-29    0.562707850735818    
+   1     3.98970968938480        0.456840937833119E-08    0.394289696221718E-06    0.124927936725211E-30    0.398858105600049E-06
+   2     4.21583673963421        0.140500099904970E-05    0.140211720304944E-08    0.670871541547441E-31    0.140640311625275E-05
+   3     5.90628151122373        0.915634130445151E-03    0.561839520709824        0.171119815322187E-28    0.562755154840269    
+   4     5.90827898433529        0.562601689823506        0.904012522293673E-03    0.149520516215307E-29    0.563505702345800    
+   5     5.99708391329487        0.253754019912775E-25    0.136636605137015E-27    0.439847079049894E-09    0.439847079049894E-09
+   6     6.06537812788849        0.751070949600930E-26    0.489537902379885E-28    0.340249180556970E-04    0.340249180556970E-04
 
  Frequencies (eV) and Transition Dipole Moments (AU)
         Omega            fx              fy              fz          ftotal
-   1     3.98970968946670       -0.214324278765503E-03    0.200954671757628E-02    0.713028479371341E-15    0.408421290658994E-05
-   2     4.21583671042043        0.368533432120795E-02   -0.116213829072573E-03    0.142999900156379E-14    0.135951947131410E-04
-   3     5.90628169244847       -0.993131665171376E-01    -1.96949099103100       -0.627890002567562E-14     3.88875786879591    
+   1     3.98970968938480       -0.216188656125426E-03    0.200843651533506E-02    0.113052502011230E-14    0.408055477116855E-05
+   2     4.21583673963421       -0.368822550518257E-02    0.116512174900078E-03   -0.805932807158230E-15    0.136165824639792E-04
+   3     5.90628151122373       -0.795472109674462E-01    -1.97047129851223       -0.108746208101802E-13     3.88908489703316    
+   4     5.90827898433529         1.97147403412960       -0.790274135704576E-01   -0.321396349174623E-14     3.89295519934287    
+   5     5.99708391329487        0.415582685375795E-12   -0.304954124155935E-13   -0.547144245139283E-04    0.299366824989036E-08
+   6     6.06537812788849        0.224818778666746E-12   -0.181503608311681E-13   -0.151318018620455E-01    0.228971427592204E-03
 
  Total energy of the ground state (eV,AU)
            0  -850.34006353735003       -31.249409522667200     
  Total energies of excited states (eV,AU)
-           1  -846.35035384788330       -31.102790449535380     
-           2  -846.12422682692954       -31.094480437829557     
-           3  -844.43378184490155       -31.032357753289467     
+           1  -846.35035384796527       -31.102790449538393     
+           2  -846.12422679771578       -31.094480436755973     
+           3  -844.43378202612632       -31.032357759949353     
+           4  -844.43178455301472       -31.032284354193290     
+           5  -844.34297962405515       -31.029020834441972     
+           6  -844.27468540946154       -31.026511069265222     
  Ground State Molecular Dipole Moment (A.U.)
                          dx              dy              dz          ftotal
                     -0.7218964E-04  0.1339155E-04  0.3065684E-14  0.7342123E-04
 
  Frequencies (eV) Unrelaxed Difference Dipole Moments (AU)
         Omega            dx              dy              dz          ftotal
-   1   3.989710      0.2111581E-04 -0.4597664E-05  0.1305845E-15  0.2161055E-04
-   2   4.215837     -0.4986997E-05  0.5872989E-06  0.1178902E-15  0.5021460E-05
-   3   5.906282     -0.1122744E-03  0.2446438E-04  0.1795432E-15  0.1149089E-03
+   1   3.989710      0.2113341E-04 -0.4619822E-05  0.1501464E-15  0.2163247E-04
+   2   4.215837     -0.5016443E-05  0.5930302E-06  0.2242961E-15  0.5051374E-05
+   3   5.906282     -0.1065299E-03  0.2654274E-04  0.1914063E-15  0.1097868E-03
+   4   5.908279     -0.8572983E-04  0.4077742E-05  0.8178802E-15  0.8582675E-04
+   5   5.997084     -0.3531735E-03  0.8381390E-05 -0.2622712E-15  0.3532729E-03
+   6   6.065378     -0.5316670E-03  0.2219629E-03  0.6711434E-16  0.5761400E-03
 QMMM:
 QMMM: SCF Energy =       21.93596565 KCal/mol,        91.78008028 KJ/mol
 QMMM: SCF Energy = Heat of formation
@@ -180,18 +223,92 @@ QMMM: QM core - QM core energy =      2403.05922388 eV (    55416.94876198 KCal/
 QMMM: QM core - MM atom energy =         0.00000000 eV (        0.00000000 KCal/mol)
 QMMM: Total core - core energy =      2403.05922388 eV (    55416.94876198 KCal/mol)
 QMMM:             Total energy =      -850.34006354 eV (   -19609.69220523 KCal/mol)
+QMMM: SCF Converged to 0.2306E-04 in:     3 Cycles 
+  Restoring quirality in HF orbitals
+ Davidson parameters
+ mdflag=           2
+ irflag=           0
+ M4=         225
+ Mx=           6
+ Mj=           0
+ nd=          30
+ nd1=           5
+ j1=           6
+ qm2ds%istore=           6
+ qm2ds%istore_M=           6
+ Currently have            6  states
+ With            6  initial guesses
+ eigenvalues and residual norm
+ @@@@ Davidson subroutine Found vectors           6
+  i, e0(i), ferr(i), ftol0
+  1 +++    3.989710171925165     0.29E-07 0.10E-05
+  2 +++    4.215837174665150     0.80E-06 0.10E-05
+  3 +++    5.906282195281362     0.49E-06 0.10E-05
+  4 +++    5.908279568988083     0.43E-06 0.10E-05
+  5 +++    5.997084443015273     0.76E-07 0.10E-05
+  6 +++    6.065376694438683     0.76E-06 0.10E-05
+ -------------------------------------------------
+
+ Frequencies (eV) and Oscillator strengths (unitless)
+        Omega            fx              fy              fz          ftotal
+   1     3.98971017192516        0.456714173831603E-08    0.394263869336380E-06    0.159745851873315E-30    0.398831011074697E-06
+   2     4.21583717466515        0.140504069574357E-05    0.140139317958334E-08    0.551769484444379E-31    0.140644208892315E-05
+   3     5.90628219528136        0.915242128936972E-03    0.561840063516448        0.169546441521347E-28    0.562755305645385    
+   4     5.90827956898808        0.562602185664631        0.903622513824133E-03    0.401635072449688E-29    0.563505808178455    
+   5     5.99708444301527        0.101946133908990E-27    0.223651869330267E-28    0.439891049697403E-09    0.439891049697403E-09
+   6     6.06537669443868        0.703364336938141E-28    0.475468062788989E-28    0.340238002362413E-04    0.340238002362413E-04
+
+ Frequencies (eV) and Transition Dipole Moments (AU)
+        Omega            fx              fy              fz          ftotal
+   1     3.98971017192516       -0.216158647011030E-03    0.200837061419127E-02    0.127839529387996E-14    0.408027708462468E-05
+   2     4.21583717466515       -0.368827741781191E-02    0.116482082802730E-03   -0.730900008533287E-15    0.136169583863554E-04
+   3     5.90628219528136       -0.795301766533003E-01    -1.97047213626304       -0.108245109814064E-13     3.88908548878755    
+   4     5.90827956898808         1.97147480535145       -0.790103608456384E-01   -0.526752176700067E-14     3.89295554525648    
+   5     5.99708444301527       -0.263412476087659E-13    0.123377858154142E-13   -0.547171568757183E-04    0.299396725656197E-08
+   6     6.06537669443868       -0.217561640762556E-13    0.178876310534429E-13   -0.151315550857665E-01    0.228963959313585E-03
+
+ Total energy of the ground state (eV,AU)
+           0  -850.34006353667019       -31.249409522642217     
+ Total energies of excited states (eV,AU)
+           1  -846.35035336474505       -31.102790431780384     
+           2  -846.12422636200506       -31.094480420743903     
+           3  -844.43378134138879       -31.032357734785723     
+           4  -844.43178396768212       -31.032284332682721     
+           5  -844.34297909365489       -31.029020814950130     
+           6  -844.27468684223152       -31.026511121918528     
+ Ground State Molecular Dipole Moment (A.U.)
+                         dx              dy              dz          ftotal
+                    -0.7222721E-04  0.1340837E-04  0.2925796E-14  0.7346124E-04
+
+ Frequencies (eV) Unrelaxed Difference Dipole Moments (AU)
+        Omega            dx              dy              dz          ftotal
+   1   3.989710      0.2108202E-04 -0.4615310E-05  0.3499192E-15  0.2158130E-04
+   2   4.215837     -0.5067025E-05  0.6034885E-06  0.3807844E-15  0.5102837E-05
+   3   5.906282     -0.1065757E-03  0.2655759E-04  0.2933907E-15  0.1098348E-03
+   4   5.908280     -0.8577537E-04  0.4087450E-05  0.1003342E-14  0.8587271E-04
+   5   5.997084     -0.3530543E-03  0.8182575E-05 -0.2655509E-15  0.3531491E-03
+   6   6.065377     -0.5318934E-03  0.2223436E-03  0.2462900E-17  0.5764956E-03
+QMMM:
+QMMM: SCF Energy =       21.93596567 KCal/mol,        91.78008035 KJ/mol
+QMMM: SCF Energy = Heat of formation
+QMMM:
+QMMM:        Electronic energy =     -3253.39928742 eV (   -75026.64096720 KCal/mol)
+QMMM: QM core - QM core energy =      2403.05922388 eV (    55416.94876198 KCal/mol)
+QMMM: QM core - MM atom energy =         0.00000000 eV (        0.00000000 KCal/mol)
+QMMM: Total core - core energy =      2403.05922388 eV (    55416.94876198 KCal/mol)
+QMMM:             Total energy =      -850.34006354 eV (   -19609.69220522 KCal/mol)
 
  |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
- | MD normal termination at   Fri Nov  7 14:08:20 PST 2025   |
- | MD total CPU time          0.11134E-01 seconds |
+ | MD normal termination at   Sat Nov  8 09:06:22 PST 2025   |
+ | MD total CPU time          0.27970E-01 seconds |
  |      0 days  0 hours  0 minutes  0 seconds     |
 
   SQM (ground sim%naesmd%state) took overall [s]:
-       0.787E-03
+       0.134E-02
   Davidson (excited states) took overall [s]:
-       0.440E-02
+       0.653E-02
   deriv (adiabatic forces) took overall [s]:
-       0.239E-02
+       0.131E-01
   nacT (NA derivatives) took overall [s]:
         0.00    
  |________________________________________________|

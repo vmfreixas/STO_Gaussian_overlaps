@@ -63,7 +63,7 @@
    rnd_seed=272184, ! seed for the random number generator
    bo_dynamics_flag=0, ! (0) Non-BO or (1) BO [1]
    exc_state_init=1, ! initial excited state (0 - ground state) [0]
-   n_exc_states_propagate=1, ! Number of excited states [0]
+   n_exc_states_propagate=4, ! Number of excited states [0]
 
    !***** Dynamics Parameters
    time_init=0.0, ! Initial time, fs [0.0]
@@ -86,7 +86,7 @@
    nstates=3, !How many states to reduce
    dotrivial=1, ! Do unavoided (trivial) crossing routine (1) or not (0) [1]
    quant_step_reduction_factor=2.5d-2, ! Quantum step reduction factor [2.5d-2]
-   NAMD_type='tsh', ! Type of molecular dynamics ('tsh','mf' or 'aimc') ['tsh']
+   NAMD_type='mf', ! Type of molecular dynamics ('tsh','mf' or 'aimc') ['tsh']
    AIMC_dclone_2=0.01,
    nclones0=0, ! Clones count for 'aimc' (must be declared here for restarting 'aimc') [0]
 
