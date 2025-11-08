@@ -1,0 +1,198 @@
+
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD execution started at    Fri Nov  7 14:08:20 PST 2025   |
+ | Computer:  Darwin vcv078149.vpn.uci.edu arm64  |
+ |________________________________________________|
+
+ rnd_seed=      272184
+ !!!!!!-----MD INPUT-----!!!!!!
+
+ Excited state MD,      state=           1
+ Number of states to propagate           1
+ Initial count for out files              0
+ MD at constant energy
+ Printing transition dipole moments:            1
+ Printing the complete TDM           1
+ Printing the HF eigenvectors           1
+ Starting time, fs           0.0000000000000000     
+ Time step, fs                        0.10000000000000001     
+ Number of classical steps (CS)            0
+ Quantum steps/per CS                    4
+ Displacement for deriv. [A]      1.0000000000000000E-003
+ Newtonian dynamics,           therm_type=           0
+ MD without freezing
+ Temperature, K                  300.00000000000000     
+ Bath relaxation constant       0.40000000000000002     
+ Equilibrated dynamics
+ Number of steps per degree K           100
+ Number of steps to write data            1
+ Number of steps to write coords          20
+ Friction coefficient [1/ps]      20.000000000000000     
+ Seed for random generator          272184
+ NAESMD verbosity,            3
+ MD will use analytic deriv,  ideriv=           1
+ Cartesian coordinates are used
+ Allocating initial naesmd_module variables
+ Allocating md_module initial variables
+ Allocating variables
+ Allocating naesmd_module variables          12           1
+ Allocating md_module variables          12
+  Finish reading coordinates 
+ Rescaling velocity
+
+ Initial Geometry
+    6        -2.496641    2.565316    0.000000
+    6        -1.101903    2.609011    0.000000
+    6        -0.366235    1.423910    0.000000
+    6        -1.026276    0.195010    0.000000
+    6        -2.420999    0.151407    0.000000
+    6        -3.156591    1.336514    0.000000
+    1        -3.077795    3.498636    0.000000
+    1        -0.582369    3.577935    0.000000
+    1         0.733391    1.456709    0.000000
+    1        -0.445138   -0.738376    0.000000
+    1        -2.942192   -0.816618    0.000000
+    1        -4.256141    1.303226    0.000000
+ LPRINT:           3           1
+
+--------------------------------------------------------------------------------
+  QM CALCULATION INFO
+--------------------------------------------------------------------------------
+
+| QMMM: Citation for AMBER QMMM Run:
+| QMMM: R.C. Walker, M.F. Crowley and D.A. Case, J. COMP. CHEM. 29:1019, 2008
+
+QMMM: SINGLET STATE CALCULATION
+QMMM: RHF CALCULATION, NO. OF DOUBLY OCCUPIED LEVELS = 15
+
+| QMMM: *** Selected Hamiltonian *** 
+| QMMM: AM1         
+
+| QMMM: *** Parameter sets in use ***
+| QMMM: C : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+| QMMM: H : M.J.S.DEWAR et al. JACS, 107, 3902, (1985)
+
+| QMMM: *** SCF convergence criteria ***
+| QMMM: Energy change                :  0.2D-04 kcal/mol
+| QMMM: Error matrix |FP-PF|         :  0.1D+00 au
+| QMMM: Density matrix change        :  0.2D-03
+| QMMM: Maximum number of SCF cycles :     3000
+
+| QMMM: *** Diagonalization Routine Information ***
+| QMMM: Pseudo diagonalizations are allowed.
+| QMMM: Auto diagonalization routine selection is disabled.
+| QMMM: Using internal diagonalization routine (diag_routine=1).
+
+  QMMM: QM Region Cartesian Coordinates (*=link atom) 
+  QMMM: QM_NO.   MM_NO.  ATOM         X         Y         Z
+  QMMM:     1        1      C       -2.4966    2.5653    0.0000
+  QMMM:     2        2      C       -1.1019    2.6090    0.0000
+  QMMM:     3        3      C       -0.3662    1.4239    0.0000
+  QMMM:     4        4      C       -1.0263    0.1950    0.0000
+  QMMM:     5        5      C       -2.4210    0.1514    0.0000
+  QMMM:     6        6      C       -3.1566    1.3365    0.0000
+  QMMM:     7        7      H       -3.0778    3.4986    0.0000
+  QMMM:     8        8      H       -0.5824    3.5779    0.0000
+  QMMM:     9        9      H        0.7334    1.4567    0.0000
+  QMMM:    10       10      H       -0.4451   -0.7384    0.0000
+  QMMM:    11       11      H       -2.9422   -0.8166    0.0000
+  QMMM:    12       12      H       -4.2561    1.3032    0.0000
+
+--------------------------------------------------------------------------------
+  RESULTS
+--------------------------------------------------------------------------------
+
+QMMM: Allocating qmmmrijdata array as     11 x      0
+QMMM: to hold min npairs of          0 and nquant per thread of       12
+QMMM: SCF Converged to 0.2306E-04 in:    10 Cycles 
+ Davidson parameters
+ mdflag=           2
+ irflag=           0
+ M4=         225
+ Mx=           3
+ Mj=           0
+ nd=          15
+ nd1=           3
+ j1=           3
+ qm2ds%istore=           0
+ qm2ds%istore_M=           0
+ eigenvalues and residual norm
+ Perturbed left m=           3
+ eigenvalues and residual norm
+ Perturbed left m=           3
+ eigenvalues and residual norm
+ Perturbed left m=           3
+ eigenvalues and residual norm
+ Perturbed left m=           1
+ eigenvalues and residual norm
+ Davidson not converged, expansion=          15
+ Currently have            3  states
+ With            3  initial guesses
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           2
+ eigenvalues and residual norm
+ Perturbed left m=           1
+ eigenvalues and residual norm
+ Perturbed left m=           1
+ eigenvalues and residual norm
+ @@@@ Davidson subroutine Found vectors           3
+  i, e0(i), ferr(i), ftol0
+  1 +++    3.989709689466700     0.30E-07 0.10E-05
+  2 +++    4.215836710420435     0.25E-06 0.10E-05
+  3 +++    5.906281692448466     0.46E-06 0.10E-05
+ -------------------------------------------------
+
+ Frequencies (eV) and Oscillator strengths (unitless)
+        Omega            fx              fy              fz          ftotal
+   1     3.98970968946670        0.448995462973065E-08    0.394725719261756E-06    0.496950307604030E-31    0.399215673891486E-06
+   2     4.21583671042043        0.140279910431440E-05    0.139494574989596E-08    0.211209362120248E-30    0.140419405006430E-05
+   3     5.90628169244847        0.142720293418999E-02    0.561280647801628        0.570478403119833E-29    0.562707850735818    
+
+ Frequencies (eV) and Transition Dipole Moments (AU)
+        Omega            fx              fy              fz          ftotal
+   1     3.98970968946670       -0.214324278765503E-03    0.200954671757628E-02    0.713028479371341E-15    0.408421290658994E-05
+   2     4.21583671042043        0.368533432120795E-02   -0.116213829072573E-03    0.142999900156379E-14    0.135951947131410E-04
+   3     5.90628169244847       -0.993131665171376E-01    -1.96949099103100       -0.627890002567562E-14     3.88875786879591    
+
+ Total energy of the ground state (eV,AU)
+           0  -850.34006353735003       -31.249409522667200     
+ Total energies of excited states (eV,AU)
+           1  -846.35035384788330       -31.102790449535380     
+           2  -846.12422682692954       -31.094480437829557     
+           3  -844.43378184490155       -31.032357753289467     
+ Ground State Molecular Dipole Moment (A.U.)
+                         dx              dy              dz          ftotal
+                    -0.7218964E-04  0.1339155E-04  0.3065684E-14  0.7342123E-04
+
+ Frequencies (eV) Unrelaxed Difference Dipole Moments (AU)
+        Omega            dx              dy              dz          ftotal
+   1   3.989710      0.2111581E-04 -0.4597664E-05  0.1305845E-15  0.2161055E-04
+   2   4.215837     -0.4986997E-05  0.5872989E-06  0.1178902E-15  0.5021460E-05
+   3   5.906282     -0.1122744E-03  0.2446438E-04  0.1795432E-15  0.1149089E-03
+QMMM:
+QMMM: SCF Energy =       21.93596565 KCal/mol,        91.78008028 KJ/mol
+QMMM: SCF Energy = Heat of formation
+QMMM:
+QMMM:        Electronic energy =     -3253.39928742 eV (   -75026.64096721 KCal/mol)
+QMMM: QM core - QM core energy =      2403.05922388 eV (    55416.94876198 KCal/mol)
+QMMM: QM core - MM atom energy =         0.00000000 eV (        0.00000000 KCal/mol)
+QMMM: Total core - core energy =      2403.05922388 eV (    55416.94876198 KCal/mol)
+QMMM:             Total energy =      -850.34006354 eV (   -19609.69220523 KCal/mol)
+
+ |^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^|
+ | MD normal termination at   Fri Nov  7 14:08:20 PST 2025   |
+ | MD total CPU time          0.11134E-01 seconds |
+ |      0 days  0 hours  0 minutes  0 seconds     |
+
+  SQM (ground sim%naesmd%state) took overall [s]:
+       0.787E-03
+  Davidson (excited states) took overall [s]:
+       0.440E-02
+  deriv (adiabatic forces) took overall [s]:
+       0.239E-02
+  nacT (NA derivatives) took overall [s]:
+        0.00    
+ |________________________________________________|
+
